@@ -1,0 +1,7 @@
+* {
+  text-decoration: none;
+}
+
+.nav-item:focus {
+  text-decoration: underline;
+}
