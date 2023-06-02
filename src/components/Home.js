@@ -4,6 +4,10 @@ import getMovies from './fetchMovies';
 import '../styles/Movie.css';
 import { reserveMovie, cancelMovie } from '../redux/movie/moviesSlice';
 import Hero from '../assets/Hero.jpg';
+import PopularImg from '../assets/Popular.jpg';
+import NowPlayingImg from '../assets/NowPlaying.jpg';
+import TopRatedImg from '../assets/TopRated.jpg';
+import UpcomingImg from '../assets/Upcoming.jpg';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -33,6 +37,32 @@ const Home = () => {
       <div className="hero flex-column" style={{ backgroundImage: `url(${Hero})` }}>
         <p className="hero-text">Wath the Best Movies At The Moment</p>
       </div>
+      <div className="search-field flex">
+        <p className="search-text">Filter by Category</p>
+        <input
+          className="search-input"
+          placeholder="search by category"
+          value=""
+          type="text"
+        />
+      </div>
+      <section className="movie-categories">
+        <div className="grid-movies-section">
+          <div className="movie-background flex-column popular" style={{ backgroundImage: `url(${PopularImg})` }}>
+            <button type="button" className="movie-category">Popular</button>
+          </div>
+          <div className="movie-background flex-column nowplaying" style={{ backgroundImage: `url(${NowPlayingImg})` }}>
+            <button type="button" className="movie-category">Now Playing</button>
+          </div>
+          <div className="movie-background flex-column toprated" style={{ backgroundImage: `url(${TopRatedImg})` }}>
+            <button type="button" className="movie-category">Top Rated</button>
+          </div>
+          <div className="movie-background flex-column upcomming" style={{ backgroundImage: `url(${UpcomingImg})` }}>
+            <button type="button" className="movie-category">Upcoming</button>
+          </div>
+        </div>
+      </section>
+
       {movies?.map((movie) => (
         <div className="movie flex" key={movie.id}>
           <img className="movie-img" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="movie_image" />

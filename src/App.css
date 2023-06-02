@@ -153,3 +153,20 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
 }
+
+.flex {
+  display: flex;
+}
+
+.grid-movies-section {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 10rem);
+}
+
+.movie-background {
+  background-position: center;
+  background-size: cover;
+}
