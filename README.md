@@ -36,16 +36,16 @@
 
 # 📖 Movie's Time App<a name="about-project"></a>
 
-The **Movie's Time** is a web application specially designed for movies lovers. Powered by React and Redux, this application divides the top trend movies into 4 categories: Popular, Top Rated, Now Playing and, Upcoming.
+The **Movie's Time**  is a web application specially designed for movie lovers. Powered by React and Redux, this application categorizes the top trending movies into four sections: Popular, Top Rated, Now Playing, and Upcoming.
 
-By accessing the Movie's Time App, users get dedicated data about the chosen category.
+Upon accessing the Movie's Time App, users can explore dedicated data for each category:
 
- - 📽️ Popular: Vote average, amount a hundreds and even thousands of movie lovers.
- - 🔝 Top Rated: Get an overview of the top rated movies of all times.
- - 🍿 Now Playing: User can take note of the movies that ypu can see in the movie at this momment.
- - 🎉 Upcoming: Get the release data for the upcoming movies.
+- 📽️ Popular: Displays the vote average, with feedback from  hundreds and even thousands of movie lovers.
+- 🔝 Top Rated: Provides an overview of the all-time highest-rated movies.
+- 🍿 Now Playing: Enables users to keep track of movies currently being shown in theaters.
+- 🎉 Upcoming: Provides release dates for upcoming movies.
 
-This application used the information provided by the [The Movie DB](https://www.themoviedb.org/).
+This application utilizes information from [The Movie DB](https://www.themoviedb.org/).
 
 ## 🛠 Built With <a name="built-with"></a>
 

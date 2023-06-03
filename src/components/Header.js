@@ -15,8 +15,8 @@ export default function Header() {
           <p className="brand-name">Movie&apos;s Time</p>
         </div>
         <div className="flex header-icons">
-          <img className="icon" src={MicIcon} alt="icon" />
-          <img className="icon" src={GearIcon} alt="icon" />
+          <img className="icon" src={MicIcon} alt="mic_icon" />
+          <img className="icon" src={GearIcon} alt="gear_icon" />
         </div>
       </div>
       <hr className="body-hr" />
