@@ -23,7 +23,7 @@ const PopularMovies = () => {
       </div>
       <ul className="movie-card-section">
         {movies.map((movie) => (
-          <li className="movie-card" key={movie.id}>
+          <li className="movie-card" key={movie.id} data-testid="movie-card">
             <hr className="card-line" />
             <p className="movie-name">
               <span style={{ fontWeight: 'bold' }}>
