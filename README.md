@@ -95,7 +95,13 @@ This application utilizes information from [The Movie DB](https://www.themoviedb
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Here is the [live demo version](https://movies_time.onrender.com).
+- Here is the [live demo version](https://movies-time.onrender.com).
+
+<video autoplay width="250">
+    <source src="./src/assets/demo.mp4" type="video/mp4">
+</video>
+
+- Here you can [walking through my app](https://drive.google.com/file/d/1_g2PbvK2azOf7Jk96lZjttrLCyOVH-Ur/view?usp=sharing).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
