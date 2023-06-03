@@ -112,3 +112,66 @@ input::placeholder {
   height: 2rem;
   width: 2rem;
 }
+
+.category-header {
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+  align-items: center;
+}
+
+.back-btn {
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.back-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.category-title {
+  color: #fff;
+  font-size: 1.20rem;
+}
+
+.movie-name {
+  text-align: center;
+  color: #fff;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem;
+}
+
+.movie-img {
+  border-radius: 1.5rem;
+  align-self: center;
+  place-self: center;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.movie-img:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.movie-overview,
+.movie-vote-average,
+.movie-date,
+.movie-popularity,
+.movie-vote {
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0.1rem 1rem 0;
+}
+
+.card-line {
+  width: 300px;
+  place-self: center;
+  color: #fff;
+  background-color: #fff;
+  margin: 1.5rem 0 0.25rem;
+}

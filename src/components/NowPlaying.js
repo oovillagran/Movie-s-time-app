@@ -19,25 +19,38 @@ const NowPlaying = () => {
           <img className="back-icon icon" src={BackIcon} alt="back-icon" />
           <p className="back-text">Back</p>
         </NavLink>
-        <h1>Now Playing Movies</h1>
+        <h1 className="category-title">Now Playing Movies</h1>
       </div>
       <ul>
         {movies.map((movie) => (
-          <li key={movie.id}>
-            <p className="movie-name">{movie.title}</p>
+          <li className="movie-card" key={movie.id}>
+            <hr className="card-line" />
+            <p className="movie-name">
+              <span style={{ fontWeight: 'bold' }}>
+                Movie Title:
+              </span>
+              {' '}
+              {movie.title}
+            </p>
             <img className="movie-img" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="movie poster" />
             <p className="movie-overview">
-              Overview:
+              <span style={{ fontWeight: 'bold' }}>
+                Overview:
+              </span>
               {' '}
               {movie.overview}
             </p>
             <p className="movie-vote-average">
-              Vote Average:
+              <span style={{ fontWeight: 'bold' }}>
+                Vote Average:
+              </span>
               {' '}
               {movie.vote_average}
             </p>
             <p className="movie-date">
-              Release Date:
+              <span style={{ fontWeight: 'bold' }}>
+                Release Date:
+              </span>
               {' '}
               {movie.release_date}
             </p>
