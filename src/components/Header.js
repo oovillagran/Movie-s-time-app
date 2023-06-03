@@ -15,9 +15,6 @@ export default function Header() {
         </div>
         <img src={MicIcon} alt="icon" />
         <img src={GearIcon} alt="icon" />
-        <div className="nav-bar flex">
-          <NavLink className="nav-item" to="/profile">My Profile</NavLink>
-        </div>
       </div>
       <hr className="body-hr" />
     </>
