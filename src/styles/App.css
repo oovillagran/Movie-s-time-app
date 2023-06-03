@@ -36,7 +36,7 @@
 }
 
 .hero {
-  background-size:cover;
+  background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   min-height: 40rem;
@@ -57,15 +57,12 @@
   align-items: center;
 }
 
-.flex {
-  display: flex;
-}
-
 .search-field {
   margin: 1rem 0.5rem;
   gap: 0.5rem;
   align-items: center;
 }
+
 .search-input {
   height: 2rem;
   border-radius: 0.25rem;
@@ -132,7 +129,7 @@ input::placeholder {
 
 .category-title {
   color: #fff;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
 }
 
 .movie-name {
@@ -181,19 +178,19 @@ input::placeholder {
   margin: 1.5rem 0 0.25rem;
 }
 
-@media only screen and (min-width:768px) and (max-width:900px ) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
   .movie-card-section {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (min-width:901px) and (max-width:1280px ) {
+@media only screen and (min-width: 901px) and (max-width: 1280px) {
   .movie-card-section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (min-width:1281px) and (max-width:1500px ) {
+@media only screen and (min-width: 1281px) and (max-width: 1500px) {
   .movie-card-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -203,7 +200,7 @@ input::placeholder {
   }
 }
 
-@media only screen and (min-width:1501px) {
+@media only screen and (min-width: 1501px) {
   .movie-card-section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
