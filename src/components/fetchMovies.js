@@ -1,8 +1,24 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://api.themoviedb.org/3/movie/popular?api_key=f1d1819ff16bbb7177fc5279dc3acaef';
+const API_KEY = 'f1d1819ff16bbb7177fc5279dc3acaef';
 
-const getMovies = createAsyncThunk('movies/getMovies', async () => {
+const getCategoryUrl = (category) => {
+  switch (category) {
+    case 'popular':
+      return `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
+    case 'nowplaying':
+      return `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`;
+    case 'toprated':
+      return `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`;
+    case 'upcoming':
+      return `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`;
+    default:
+      return '';
+  }
+};
+
+const getMovies = createAsyncThunk('movies/getMovies', async (category) => {
+  const url = getCategoryUrl(category);
   const response = await fetch(url);
   const data = await response.json();
   console.log(data.results);

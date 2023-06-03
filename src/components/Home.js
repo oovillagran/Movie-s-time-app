@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import getMovies from './fetchMovies';
 import '../styles/Movie.css';
 import Hero from '../assets/Hero.jpg';
@@ -10,11 +11,12 @@ import Upcoming from '../assets/upcoming.jpg';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const status = useSelector((state) => state.movies.status); // Access 'status' correctly
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    dispatch(getMovies());
+    dispatch(getMovies('popular'));
   }, [dispatch]);
 
   if (status === 'loading') {
@@ -38,6 +40,10 @@ const Home = () => {
 
   const handleInputChange = (event) => {
     setFilter(event.target.value);
+  };
+
+  const handleCategoryClick = (categoryName) => {
+    navigate(`/${categoryName}`);
   };
 
   return (
@@ -69,6 +75,7 @@ const Home = () => {
                   className={`movie-category btn-${category.name}`}
                   id={`btn-${category.name}`}
                   key={`btn-${category.name}`}
+                  onClick={() => handleCategoryClick(category.name)}
                 >
                   {category.name.charAt(0).toUpperCase() + category.name.slice(1)}
                 </button>
