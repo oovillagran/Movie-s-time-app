@@ -5,9 +5,6 @@ import thunk from 'redux-thunk';
 import { MemoryRouter } from 'react-router';
 import UpcomingMovies from '../components/Upcoming';
 
-// Create a mock implementation of getMovies
-const getMovies = jest.fn();
-
 // Create a mock Redux store
 const mockStore = configureStore([thunk]);
 const store = mockStore({
@@ -34,7 +31,7 @@ const store = mockStore({
 });
 
 test('renders movie cards correctly', () => {
-  const { getAllByTestId, getByText } = render(
+  const { getAllByTestId } = render(
     <Provider store={store}>
       <MemoryRouter>
         <UpcomingMovies />

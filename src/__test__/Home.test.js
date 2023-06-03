@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import Home from '../components/Home';
-import getMovies from '../components/fetchMovies';
 
 jest.mock('react-redux', () => ({
   useDispatch: jest.fn(),
@@ -13,7 +12,6 @@ jest.mock('../components/fetchMovies', () => jest.fn());
 
 describe('Testing Home Component', () => {
   const mockDispatch = jest.fn();
-  const mockSelector = jest.fn();
 
   beforeEach(() => {
     useDispatch.mockReturnValue(mockDispatch);
