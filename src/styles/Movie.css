@@ -1,0 +1,37 @@
+.movie {
+  margin: 2rem 7.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.movie-img {
+  width: 15rem;
+}
+
+.reserve-btn {
+  width: 12rem;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  background-color: #097de3;
+  border-radius: 5px;
+  color: #fff;
+  border: #097de3;
+}
+
+.cancel {
+  color: #7f7c7c;
+  background-color: #fff;
+  border: #7f7c7c 2px solid;
+}
+
+.reserve-badge {
+  margin-right: 1rem;
+  background-color: #09adad;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0.25rem;
+  text-transform: capitalize;
+  color: #fff;
+}
