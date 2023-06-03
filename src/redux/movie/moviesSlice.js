@@ -19,24 +19,7 @@ const initialState = {
 const moviesSlice = createSlice({
   name: 'movies',
   initialState,
-  reducers: {
-    reserveMovie: (state, action) => {
-      const movieId = action.payload;
-      const newMovies = state.movies.map((movie) => (
-        movie.id !== movieId ? movie : { ...movie, reserved: true }
-      ));
-      saveMovies(newMovies);
-      return { ...state, movies: newMovies };
-    },
-    cancelMovie: (state, action) => {
-      const movieId = action.payload;
-      const newMovies = state.movies.map((movie) => (
-        movie.id !== movieId ? movie : { ...movie, reserved: false }
-      ));
-      saveMovies(newMovies);
-      return { ...state, movies: newMovies };
-    },
-  },
+  reducers: {},
 
   extraReducers(builder) {
     builder

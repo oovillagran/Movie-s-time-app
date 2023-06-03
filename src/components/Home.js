@@ -49,7 +49,10 @@ const Home = () => {
   return (
     <div>
       <div className="hero flex-column" style={{ backgroundImage: `url(${Hero})` }}>
-        <p className="hero-text">Wath the Best Movies At The Moment</p>
+        <p className="hero-text">
+          Welcome to a collection of the finest films
+          spanning from the past, present, and even the future.
+        </p>
       </div>
       <div className="search-field flex">
         <p className="search-text">Filter by Category</p>

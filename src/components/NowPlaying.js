@@ -16,7 +16,7 @@ const NowPlaying = () => {
     <div>
       <div className="flex category-header">
         <NavLink className="back-btn flex" to="/">
-          <img className="back-icon" src={BackIcon} alt="back-icon" />
+          <img className="back-icon icon" src={BackIcon} alt="back-icon" />
           <p className="back-text">Back</p>
         </NavLink>
         <h1>Now Playing Movies</h1>

@@ -21,7 +21,6 @@ const getMovies = createAsyncThunk('movies/getMovies', async (category) => {
   const url = getCategoryUrl(category);
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data.results);
   return data.results.map((movie) => ({
     id: movie.id,
     original_title: movie.original_title,
