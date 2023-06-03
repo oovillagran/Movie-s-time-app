@@ -8,13 +8,13 @@ describe('Testing Header component', () => {
     render(
       <MemoryRouter>
         <Header />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     // check if the logo is rendered
     const Logo = screen.getByAltText('Logo');
     expect(Logo).toBeTruthy();
-    
+
     // chek if the brand name is rendered
     const brand = screen.getByText('Movie\'s Time');
     expect(brand).toBeTruthy();
@@ -24,7 +24,7 @@ describe('Testing Header component', () => {
     render(
       <MemoryRouter>
         <Header />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     // Check if the microphone icon is rendered
