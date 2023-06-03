@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 import PopularMovies from './components/PopularMovies';
 import NowPlaying from './components/NowPlaying';
+import UpcomingMovies from './components/Upcoming';
+import TopRated from './components/TopRated';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/popular" element={<PopularMovies />} />
           <Route path="/nowplaying" element={<NowPlaying />} />
+          <Route path="/upcoming" element={<UpcomingMovies />} />
+          <Route path="/toprated" element={<TopRated />} />
         </Routes>
       </BrowserRouter>
     </>
