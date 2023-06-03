@@ -64,7 +64,12 @@ const Home = () => {
                 className={`movie-background flex-column ${category.name}`}
                 style={{ backgroundImage: `url(${category.image})` }}
               >
-                <button type="button" className="movie-category">
+                <button
+                  type="button"
+                  className={`movie-category btn-${category.name}`}
+                  id={`btn-${category.name}`}
+                  key={`btn-${category.name}`}
+                >
                   {category.name.charAt(0).toUpperCase() + category.name.slice(1)}
                 </button>
               </div>
