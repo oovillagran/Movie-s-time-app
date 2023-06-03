@@ -83,7 +83,7 @@ describe('fetchMovies', () => {
 
     // Check if the API endpoint was called with the correct URL
     expect(global.fetch).toHaveBeenCalledWith(
-      'https://api.themoviedb.org/3/movie/popular?api_key=f1d1819ff16bbb7177fc5279dc3acaef'
+      'https://api.themoviedb.org/3/movie/popular?api_key=f1d1819ff16bbb7177fc5279dc3acaef',
     );
   });
 });

@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
-import TopRated from '../components/TopRated';
 import thunk from 'redux-thunk';
 import { MemoryRouter } from 'react-router';
+import TopRated from '../components/TopRated';
 
 // Create a mock implementation of getMovies
 const getMovies = jest.fn();
@@ -29,7 +29,7 @@ const store = mockStore({
         vote_average: 8.0,
         release_date: '2023-02-01',
       },
-    ]
+    ],
   },
 });
 
@@ -39,7 +39,7 @@ test('renders movie cards correctly', () => {
       <MemoryRouter>
         <TopRated />
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   );
 
   // Verify if the movie cards are rendered correctly

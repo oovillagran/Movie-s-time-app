@@ -30,7 +30,7 @@ describe('Testing Home Component', () => {
     render(
       <MemoryRouter>
         <Home />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const loadingElement = screen.getByText('Loading...');
@@ -43,7 +43,7 @@ describe('Testing Home Component', () => {
     render(
       <MemoryRouter>
         <Home />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const errorElement = screen.getByText('Error occurred while fetching movies.');
@@ -54,7 +54,7 @@ describe('Testing Home Component', () => {
     render(
       <MemoryRouter>
         <Home />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const categoryButtons = screen.getAllByRole('button', { name: /^Popular$|^Nowplaying$|^Toprated$|^Upcoming$/ });
