@@ -75,7 +75,7 @@ const Home = () => {
               >
                 <button
                   type="button"
-                  className={`movie-category btn-${category.name}`}
+                  className={`movie-category-btn btn-${category.name}`}
                   id={`btn-${category.name}`}
                   key={`btn-${category.name}`}
                   onClick={() => handleCategoryClick(category.name)}

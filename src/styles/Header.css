@@ -5,3 +5,8 @@
 .nav-item:focus {
   text-decoration: underline;
 }
+
+.brand-name {
+  color: #fff;
+  font-size: 1.25rem;
+}

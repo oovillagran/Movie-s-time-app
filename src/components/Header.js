@@ -9,11 +9,15 @@ export default function Header() {
     <>
       <div className="header flex">
         <div className="brand flex">
-          <img src={logo} alt="Logo" className="logo icon" width="5%" />
-          <NavLink className="brand-name" to="/">Movie&apos;s Time</NavLink>
+          <NavLink to="/">
+            <img src={logo} alt="Logo" className="logo icon" />
+          </NavLink>
+          <p className="brand-name">Movie&apos;s Time</p>
         </div>
-        <img className="icon" src={MicIcon} alt="icon" />
-        <img className="icon" src={GearIcon} alt="icon" />
+        <div className="flex header-icons">
+          <img className="icon" src={MicIcon} alt="icon" />
+          <img className="icon" src={GearIcon} alt="icon" />
+        </div>
       </div>
       <hr className="body-hr" />
     </>
