@@ -140,6 +140,11 @@ input::placeholder {
   color: #fff;
 }
 
+.movie-card-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .movie-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -174,4 +179,36 @@ input::placeholder {
   color: #fff;
   background-color: #fff;
   margin: 1.5rem 0 0.25rem;
+}
+
+@media only screen and (min-width:768px) and (max-width:900px ) {
+  .movie-card-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width:901px) and (max-width:1280px ) {
+  .movie-card-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width:1281px) and (max-width:1500px ) {
+  .movie-card-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .card-line {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width:1501px) {
+  .movie-card-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card-line {
+    width: 280px;
+  }
 }

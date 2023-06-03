@@ -21,7 +21,7 @@ const PopularMovies = () => {
         </NavLink>
         <h1 className="category-title">Popular Movies</h1>
       </div>
-      <ul>
+      <ul className="movie-card-section">
         {movies.map((movie) => (
           <li className="movie-card" key={movie.id}>
             <hr className="card-line" />
